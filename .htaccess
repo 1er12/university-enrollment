@@ -1,0 +1,5 @@
+Options -Indexes
+
+# Block direct access to sensitive folders
+RewriteEngine On
+RewriteRule ^(config|includes|database)/ - [F,L]
